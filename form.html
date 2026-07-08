@@ -21,14 +21,16 @@
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--navy);-webkit-font-smoothing:antialiased;line-height:1.6;min-height:100vh}
     img{max-width:100%;display:block}
-    .event-banner{background:linear-gradient(90deg,var(--navy),var(--navy-mid),var(--navy));padding:10px 20px;text-align:center;color:#fff;font-size:12px;font-weight:700;letter-spacing:.5px}
-    .event-banner i{margin:0 6px;color:var(--orange)}
-    .hdr{background:#fff;border-bottom:1px solid var(--g100)}
-    .hdr-in{max-width:1100px;margin:0 auto;display:flex;justify-content:center;align-items:center;padding:14px 20px}
-    .hdr-logo img{height:46px;width:auto}
-    .wrap{position:relative;overflow:hidden;min-height:calc(100vh - 75px);display:flex;align-items:flex-start;justify-content:center;padding:32px 16px 56px}
+    .page-logo-row{position:relative;z-index:3;display:flex;justify-content:center;padding:14px 16px 4px}
+    .page-logo-row img{height:27px;width:auto}
+    @media (max-width:767px){
+      .page-logo-row{padding:22px 20px 0}
+      .page-logo-row img{height:36px}
+    }
+    .wrap{position:relative;overflow:hidden;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:0 16px 56px}
     .wrap::before{content:'';position:absolute;inset:0;background:url('./img/hero-photo.png') center/cover no-repeat;opacity:.62}
     .wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,31,60,.45),rgba(10,31,60,.68))}
+    .wrap .form-card{margin-top:28px}
     .form-card{position:relative;z-index:2;background:#fff;border-radius:20px;padding:32px;width:100%;max-width:560px;box-shadow:0 20px 60px rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.5)}
     .form-head{text-align:center;margin-bottom:20px}
     .form-head h1{font-family:'Source Serif 4',serif;font-size:26px;font-weight:700;color:var(--navy);line-height:1.2}
@@ -74,14 +76,10 @@
 </head>
 <body>
 
-<div class="event-banner"><i class="fas fa-gift"></i> GUTTER GUARD SAVINGS EVENT <i class="fas fa-gift"></i> Limited Time Offer — Ends Soon!</div>
-<header class="hdr">
-  <div class="hdr-in">
-    <a href="index.html"><div class="hdr-logo"><img src="https://affordablehome.com/lp-clog-free-gutters/assets/img/logo.svg" alt="Affordable Home" style="filter:brightness(0) saturate(100%) invert(11%) sepia(38%) saturate(1500%) hue-rotate(190deg)"></div></a>
-  </div>
-</header>
-
 <div class="wrap">
+  <div class="page-logo-row">
+    <a href="index.html"><img src="./img/logo-white.svg" alt="Affordable Home" /></a>
+  </div>
   <div class="form-card">
     <div class="form-head">
       <h1>You're Almost There!</h1>
