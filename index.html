@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Gutter Quote | Affordable Home</title>
+  <meta name="description" content="Up to 75% off gutter guard installation + an extra $200 off. Check if you live in a qualifying zip code. Free no-obligation estimate." />
+  <meta name="cake-offer-id" content="249" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    :root{
+      --navy:#0A1F3C; --navy-deep:#061429; --navy-mid:#13345e;
+      --orange:#F97316; --orange-dk:#ea6c0f; --orange-soft:rgba(249,115,22,.12);
+      --ink:#1A1A1A; --body:#555;
+      --g50:#F5F5F5; --g100:#EEF0F3; --g300:#D1D5DB; --g700:#374151; --g900:#111827;
+      --shadow:0 8px 40px rgba(10,31,60,.18);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.6}
+    img{max-width:100%;display:block}
+    .event-banner{background:linear-gradient(90deg,var(--navy),var(--navy-mid),var(--navy));padding:10px 20px;text-align:center;color:#fff;font-size:12px;font-weight:700;letter-spacing:.5px}
+    .event-banner i{margin:0 6px;color:var(--orange)}
+    .hero-logo-bar{position:relative;z-index:3;display:flex;justify-content:center;padding:22px 20px 0}
+    .hero-logo{height:36px;width:auto;filter:drop-shadow(0 2px 10px rgba(0,0,0,.4))}
+    .hero{position:relative;overflow:hidden;background:var(--navy);padding:0 16px 56px}
+    .hero::before{content:'';position:absolute;inset:0;background:url('./img/hero-photo.png') center/cover no-repeat;opacity:.62}
+    .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,31,60,.45),rgba(10,31,60,.68))}
+    .hero-content{position:relative;z-index:2;max-width:600px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:28px}
+    .offer-pct{font-family:'Inter',sans-serif;font-size:52px;font-weight:900;line-height:1;color:#fff;letter-spacing:-1.5px;text-shadow:0 2px 12px rgba(0,0,0,.45)}
+    .offer-pct .amt{color:var(--orange)}
+    .offer-style{font-family:'Inter',sans-serif;font-size:28px;font-weight:800;color:#fff;margin-top:4px;text-shadow:0 2px 10px rgba(0,0,0,.4)}
+    .offer-detail{font-size:16px;font-weight:600;color:rgba(255,255,255,.72);margin-top:10px;line-height:1.5}
+    .offer-detail strong{color:#fff;font-weight:800}
+    .offer-copy{font-size:14px;font-weight:500;color:rgba(255,255,255,.62);margin-top:16px;line-height:1.7;max-width:480px}
+    .offer-copy strong{color:rgba(255,255,255,.9);font-weight:700}
+    .promo-row{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:22px 0 24px}
+    .promo-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:100px;padding:9px 20px;font-size:14px;font-weight:700;color:#fff;white-space:nowrap}
+    .promo-pill i{font-size:14px;color:var(--orange)}
+    .zip-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:28px 24px 24px;width:100%;max-width:440px;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 20px 60px rgba(0,0,0,.3)}
+    .zip-card-label{font-size:14px;font-weight:600;color:rgba(255,255,255,.9);margin-bottom:14px;text-align:center}
+    .zip-input-row{display:flex;flex-direction:column;gap:10px;margin-bottom:12px}
+    .zip-input{width:100%;height:60px;background:rgba(255,255,255,.95);border:2px solid transparent;border-radius:14px;padding:0 20px;font-size:26px;font-weight:700;font-family:'Inter',sans-serif;color:var(--g900);text-align:center;letter-spacing:6px;outline:none;-webkit-appearance:none;transition:all .2s}
+    .zip-input:focus{border-color:var(--orange);box-shadow:0 0 0 4px rgba(249,115,22,.2)}
+    .zip-input::placeholder{color:var(--g300);letter-spacing:0;font-weight:400;font-size:15px}
+    .zip-btn{width:100%;height:58px;background:var(--orange);color:#fff;border:none;border-radius:14px;font-size:16px;font-weight:800;letter-spacing:1px;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .2s;box-shadow:0 8px 24px rgba(249,115,22,.35)}
+    .zip-btn:hover{background:var(--orange-dk);transform:translateY(-1px);box-shadow:0 12px 32px rgba(249,115,22,.4)}
+    .zip-btn i{font-size:14px}
+    .zip-btn{animation:btn-pulse 2.5s infinite}
+    @keyframes btn-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.02)}}
+    .zip-step{text-align:center;font-size:12px;font-weight:500;color:rgba(255,255,255,.45);margin-top:8px}
+    .zip-step i{margin-right:3px;color:var(--orange)}
+    .zip-microcopy{text-align:center;font-size:11px;color:rgba(255,255,255,.5);margin-top:14px;line-height:1.5}
+    .zip-microcopy i{margin-right:3px;color:var(--orange)}
+    .zip-err{display:none;text-align:center;font-size:12px;color:#ffb4b4;font-weight:600;margin-top:8px}
+    .zip-err.show{display:block}
+
+    /* social-proof toast */
+    .claim-toast{position:fixed;bottom:20px;left:16px;z-index:90;background:#fff;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,.2);padding:12px 16px;display:flex;align-items:center;gap:10px;max-width:300px;transform:translateX(-120%);transition:transform .4s cubic-bezier(.22,1,.36,1);border-left:4px solid var(--orange)}
+    .claim-toast.show{transform:translateX(0)}
+    .ct-icon{font-size:20px}
+    .ct-text{font-size:13px;color:var(--g700);line-height:1.35}
+    .ct-text strong{color:var(--navy)}
+    .ct-time{font-size:11px;color:var(--body);margin-top:2px}
+
+    /* sticky bottom CTA */
+    .sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:80;background:rgba(10,31,60,.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid rgba(255,255,255,.12);padding:12px 16px;display:flex;align-items:center;gap:12px;transform:translateY(100%);transition:transform .4s cubic-bezier(.22,1,.36,1)}
+    .sticky-cta.show{transform:translateY(0)}
+    .sticky-cta-text{flex:1;color:#fff;font-size:13px;font-weight:700;line-height:1.3}
+    .sticky-cta-text span{display:block;font-size:11px;font-weight:500;color:rgba(255,255,255,.55)}
+    .sticky-cta-btn{flex-shrink:0;background:var(--orange);color:#fff;border:none;border-radius:10px;padding:12px 22px;font-size:13px;font-weight:800;text-transform:uppercase;cursor:pointer;text-decoration:none;letter-spacing:.5px}
+    .claim-toast.show-when-sticky{bottom:72px}
+
+    /* qualify celebration flash */
+    .qualify-flash{position:fixed;inset:0;z-index:200;background:rgba(10,31,60,.96);display:none;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:24px}
+    .qualify-flash.show{display:flex;animation:qf-fade .25s ease}
+    @keyframes qf-fade{from{opacity:0}to{opacity:1}}
+    .qf-check{width:84px;height:84px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;margin-bottom:22px;animation:qf-pop .4s cubic-bezier(.18,1.4,.4,1)}
+    @keyframes qf-pop{0%{transform:scale(0)}100%{transform:scale(1)}}
+    .qf-check i{color:#fff;font-size:40px}
+    .qf-title{font-size:28px;font-weight:900;color:#fff;margin-bottom:8px}
+    .qf-title .amt{color:var(--orange)}
+    .qf-sub{font-size:15px;color:rgba(255,255,255,.8);max-width:340px}
+    .qf-zip{color:var(--orange);font-weight:800}
+    .trust-strip{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:24px;flex-wrap:wrap}
+    .trust-item{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:rgba(255,255,255,.75);white-space:nowrap}
+    .trust-item i{color:var(--orange);font-size:14px}
+    .trust-item.rating-pill{background:#fff;color:var(--navy);border-radius:100px;padding:8px 18px;font-size:15px;font-weight:800;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+    .trust-item.rating-pill i{color:#F0C419;font-size:15px}
+    section.block{padding:64px 20px}
+    .container{max-width:1100px;margin:0 auto}
+    .sec-title{font-size:clamp(24px,3vw,34px);font-weight:800;text-align:center;line-height:1.2;color:var(--navy);margin-bottom:8px}
+    .sec-sub{font-size:15px;color:var(--body);text-align:center;margin-bottom:40px;font-weight:500}
+    .benefits-section{background:#fff}
+    .benefits-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:760px;margin:0 auto;text-align:left}
+    .benefit{display:flex;align-items:flex-start;gap:12px;background:var(--g50);border:1px solid var(--g100);border-radius:14px;padding:18px}
+    .benefit.featured{background:linear-gradient(135deg,var(--navy),var(--navy-mid));border:2px solid var(--orange);box-shadow:0 10px 28px rgba(10,31,60,.25)}
+    .benefit.featured .benefit-text,.benefit.featured .benefit-text strong{color:#fff}
+    .benefit.featured .benefit-icon{background:var(--orange)}
+    .benefit-icon{flex-shrink:0;width:36px;height:36px;background:var(--orange);border-radius:8px;display:flex;align-items:center;justify-content:center}
+    .benefit-icon i{color:#fff;font-size:14px}
+    .benefit-text{font-size:14px;font-weight:600;color:var(--g700);line-height:1.45}
+    .benefit-text strong{color:var(--navy)}
+    .benefits-cta{margin-top:32px;text-align:center}
+    .benefits-cta-btn{display:inline-flex;align-items:center;gap:8px;background:var(--orange);color:#fff;font-size:15px;font-weight:800;padding:15px 32px;border-radius:8px;text-decoration:none;transition:background .15s,transform .15s;cursor:pointer;border:none}
+    .benefits-cta-btn:hover{background:var(--orange-dk);transform:translateY(-1px)}
+    .how-section{background:var(--navy);color:#fff}
+    .how-section .sec-title{color:#fff}
+    .how-label{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--orange);text-align:center;margin-bottom:12px}
+    .steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;text-align:center;max-width:900px;margin:0 auto}
+    .step-circle{width:56px;height:56px;border-radius:50%;background:var(--orange);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
+    .step-item h3{font-size:18px;font-weight:700;margin-bottom:10px;color:#fff}
+    .step-item p{font-size:15px;color:rgba(255,255,255,.78);line-height:1.6}
+    .product-section{background:var(--g50)}
+    .product-layout{display:flex;align-items:center;justify-content:center;gap:48px;max-width:960px;margin:0 auto;flex-wrap:wrap}
+    .product-image-wrap{flex:0 0 300px;display:flex;align-items:center;justify-content:center}
+    .product-img{width:100%;max-width:300px;object-fit:contain}
+    .product-copy{flex:1;min-width:260px}
+    .product-feats{list-style:none;display:flex;flex-direction:column;gap:16px}
+    .product-feats li{display:flex;align-items:flex-start;gap:12px}
+    .product-feats .pf-ico{flex-shrink:0;width:40px;height:40px;border-radius:10px;background:var(--orange-soft);display:flex;align-items:center;justify-content:center}
+    .product-feats .pf-ico i{color:var(--orange);font-size:16px}
+    .product-feats h3{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:2px}
+    .product-feats p{font-size:14px;color:var(--body);line-height:1.55}
+    .partners-section{background:#fff}
+    .partners-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;align-items:center;justify-items:center;max-width:840px;margin:0 auto}
+    .partner-logo{background:#fff;border:1px solid var(--g100);border-radius:14px;padding:24px;width:100%;height:120px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,.04)}
+    .partner-logo img{max-width:100%;max-height:100%;object-fit:contain}
+    .gallery-section{background:var(--g50)}
+    .gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:900px;margin:0 auto}
+    .gallery-img{border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:var(--g100)}
+    .gallery-img img{width:100%;height:100%;object-fit:cover}
+    .problem-section{background:#fff}
+    .problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;max-width:1000px;margin:0 auto}
+    .problem-grid h2{font-size:clamp(22px,2.6vw,30px);font-weight:800;color:var(--navy);margin-bottom:18px;line-height:1.2}
+    .problem-grid p{font-size:15px;color:var(--body);line-height:1.7}
+    .problem-img img{width:100%;border-radius:14px;object-fit:cover;height:340px}
+    .why-section{background:var(--g50)}
+    .why-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:640px;margin:0 auto 36px}
+    .stat-card{background:#fff;border:1px solid var(--g100);border-radius:14px;padding:24px 16px;text-align:center;box-shadow:0 4px 16px rgba(0,0,0,.04)}
+    .stat-num{font-size:30px;font-weight:900;color:var(--orange);line-height:1}
+    .stat-label{font-size:13px;color:var(--body);font-weight:600;margin-top:6px}
+    .why-features{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:760px;margin:0 auto;text-align:left}
+    .why-feat{display:flex;align-items:flex-start;gap:12px;background:#fff;border:1px solid var(--g100);border-radius:14px;padding:16px}
+    .why-feat-icon{flex-shrink:0;width:34px;height:34px;background:linear-gradient(135deg,var(--navy),var(--orange));border-radius:8px;display:flex;align-items:center;justify-content:center}
+    .why-feat-icon i{color:#fff;font-size:13px}
+    .why-feat-text{font-size:13px;font-weight:600;color:var(--g700);line-height:1.5}
+    .why-feat-text strong{color:var(--navy)}
+    .faq-section{background:#fff}
+    .faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+    .faq-item{background:var(--g50);border:1px solid var(--g100);border-radius:12px;overflow:hidden}
+    .faq-q{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 20px;font-size:15px;font-weight:700;color:var(--navy);cursor:pointer;list-style:none}
+    .faq-q::-webkit-details-marker{display:none}
+    .faq-arrow{color:var(--orange);transition:transform .2s;font-size:14px}
+    .faq-item[open] .faq-arrow{transform:rotate(180deg)}
+    .faq-a{padding:0 20px 18px;font-size:14px;color:var(--body);line-height:1.65}
+    .cta-banner{position:relative;overflow:hidden;background:var(--navy);text-align:center;padding:72px 20px}
+    .cta-banner::before{content:'';position:absolute;inset:0;background:url('https://affordablehome.com/lp-clog-free-gutters/assets/img/hero.jpg') center/cover no-repeat;opacity:.22}
+    .cta-banner .container{position:relative;z-index:1;max-width:560px}
+    .cta-banner h2{font-size:clamp(24px,3.5vw,40px);font-weight:800;color:#fff;margin-bottom:24px}
+    .cta-zip-row{display:flex;gap:10px;max-width:420px;margin:0 auto;flex-wrap:wrap}
+    .cta-zip-row .zip-input{flex:1;min-width:160px;height:56px}
+    .cta-zip-row .zip-btn{width:auto;padding:0 28px;height:56px;white-space:nowrap}
+    footer{background:var(--navy-deep);padding:40px 20px 32px;text-align:center}
+    .footer-logo{width:150px;margin:0 auto 14px}
+    footer p{color:rgba(255,255,255,.65);font-size:13px;line-height:1.6;max-width:700px;margin:0 auto}
+    footer .copyright{color:rgba(255,255,255,.85);font-weight:500;margin-bottom:8px}
+    .footer-links{margin-top:12px}
+    .footer-links a{color:rgba(255,255,255,.7);font-size:13px;text-decoration:underline;margin:0 8px}
+    @media (min-width:768px){.offer-pct{font-size:72px}.offer-style{font-size:32px}.hero-content{padding-top:64px}.partners-grid{grid-template-columns:repeat(4,1fr)}.gallery-grid{grid-template-columns:repeat(4,1fr)}}
+    @media (max-width:767px){.event-banner{display:none}.steps-grid{grid-template-columns:1fr;gap:32px}.benefits-grid,.why-features{grid-template-columns:1fr}.partners-grid{grid-template-columns:1fr 1fr}.product-image-wrap{flex:none;width:240px}.problem-grid{grid-template-columns:1fr;gap:28px}.problem-img{order:-1}.cta-zip-row{flex-direction:column;align-items:center}.cta-zip-row .zip-input{width:100%;flex:none}.cta-zip-row .zip-btn{width:100%}}
+    @media (max-width:540px){.gallery-grid{grid-template-columns:1fr}}
+
+    /* ══════════════ DESKTOP-ONLY CUSTOM HERO ══════════════ */
+    #hero-desktop{display:none}
+    #hero-mobile{display:block}
+    @media (min-width:768px){
+      #hero-desktop{display:block}
+      #hero-mobile{display:none}
+    }
+    .dh-hero{position:relative;overflow:hidden;background:url('./img/hero-photo.png') center 45% / cover no-repeat}
+    .dh-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg, rgba(6,14,28,.95) 0%, rgba(6,14,28,.82) 25%, rgba(6,14,28,.5) 50%, rgba(6,14,28,.18) 75%, rgba(6,14,28,0) 100%);pointer-events:none;z-index:0}
+    .dh-logo-row{position:relative;z-index:1;display:flex;justify-content:center;padding:14px 16px 4px}
+    .dh-logo{height:27px;width:auto}
+    .dh-inner{position:relative;z-index:1;max-width:1240px;margin:0 auto;padding:68px 44px 56px}
+    .dh-content{max-width:640px;margin:0 auto;text-align:center}
+    .dh-headline{margin-bottom:12px}
+    .dh-line1{display:block;width:fit-content;margin:0 auto;font-size:clamp(42px,5.75vw,67px);font-weight:900;line-height:1.05;color:#fff;letter-spacing:-.5px}
+    .dh-line2{display:block;width:fit-content;margin:6px auto 0;font-size:clamp(19px,2.79vw,32px);font-weight:900;line-height:1.15;color:#fff;letter-spacing:-.2px;white-space:nowrap}
+    .dh-accent{color:var(--orange)}
+    .dh-sub{font-size:19px;font-weight:600;color:#fff;margin-bottom:26px;line-height:1.5}
+    .dh-sub strong{color:var(--orange);font-weight:800}
+    .dh-benefits{display:flex;flex-wrap:nowrap;justify-content:center;gap:8px;margin:0 auto 28px}
+    .dh-ben{display:flex;align-items:center;gap:8px;padding:7px 16px 7px 7px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);font-size:12.5px;font-weight:700;color:#fff;white-space:nowrap}
+    .dh-ben-circle{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.12);display:grid;place-items:center;flex-shrink:0}
+    .dh-ben-circle i{color:var(--orange);font-size:12px}
+    .dh-zip-card{background:rgba(20,32,54,.6);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:36px 40px;max-width:620px;margin:0 auto 26px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);text-align:center}
+    .dh-zip-card h3{color:#fff;font-size:18px;font-weight:800;margin-bottom:22px}
+    .dh-zip-input{width:100%;padding:17px 18px;border-radius:10px;border:none;font-family:'Inter',sans-serif;font-size:15px;color:#333;background:#fff;outline:none;margin-bottom:14px;text-align:center}
+    .dh-zip-input::placeholder{color:#9ca3af}
+    .dh-zip-btn{width:100%;padding:17px;background:var(--orange);color:#fff;border:none;border-radius:12px;font-family:'Inter',sans-serif;font-size:15px;font-weight:800;letter-spacing:.5px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:background .18s;box-shadow:0 12px 30px -6px rgba(249,115,22,.6)}
+    .dh-zip-btn:hover{background:var(--orange-dk)}
+    .dh-zip-meta{margin-top:16px;display:flex;flex-direction:column;align-items:center;gap:8px}
+    .dh-zip-meta div{display:flex;align-items:center;gap:8px}
+    .dh-zip-meta div:first-child{font-size:14px;color:rgba(255,255,255,.9);font-weight:500}
+    .dh-zip-meta div:last-child{font-size:12.5px;color:rgba(255,255,255,.62)}
+    .dh-zip-meta i{color:var(--orange)}
+    .dh-zip-desc{margin-top:18px;font-size:14px;color:rgba(255,255,255,.78);line-height:1.7}
+    .dh-zip-desc strong{color:#fff;font-weight:700}
+  </style>
+</head>
+<body>
+
+<div class="event-banner"><i class="fas fa-gift"></i> GUTTER GUARD SAVINGS EVENT <i class="fas fa-gift"></i> Limited Time Offer — Ends Soon!</div>
+
+<div id="top">
+
+  <!-- ═══════════════════ DESKTOP HERO (≥768px) ═══════════════════ -->
+  <section id="hero-desktop" class="dh-hero">
+    <div class="dh-logo-row">
+      <img src="./img/logo-white.svg" alt="Affordable Home" class="dh-logo" />
+    </div>
+    <div class="dh-inner">
+      <div class="dh-content">
+        <h1 class="dh-headline">
+          <span class="dh-line1">UP TO <span class="dh-accent">75% OFF</span></span>
+          <span class="dh-line2">GUTTER GUARD INSTALLATION</span>
+        </h1>
+        <p class="dh-sub">
+          <strong>+ An Extra $200 Off</strong> When You Purchase
+        </p>
+        <div class="dh-benefits">
+          <div class="dh-ben">
+            <div class="dh-ben-circle"><i class="fas fa-shield-halved"></i></div>
+            <span>Lifetime Warranty</span>
+          </div>
+          <div class="dh-ben">
+            <div class="dh-ben-circle"><i class="fas fa-leaf"></i></div>
+            <span>Debris-Proof</span>
+          </div>
+          <div class="dh-ben">
+            <div class="dh-ben-circle"><i class="fas fa-broom"></i></div>
+            <span>Maintenance-Free</span>
+          </div>
+        </div>
+        <div class="dh-zip-card" id="d1-zip-card">
+          <h3>Check if your zip code qualifies</h3>
+          <input class="dh-zip-input" id="d1-zip" type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="5" placeholder="Enter zip code" autocomplete="postal-code">
+          <button class="dh-zip-btn" id="d1-zip-btn" onclick="goToForm()"><i class="fas fa-lock"></i> Check My Zip Code</button>
+          <div class="dh-zip-meta">
+            <div><i class="fas fa-clock"></i> Takes 30 seconds &mdash; No obligation</div>
+            <div><i class="fas fa-gift"></i> Free no-obligation estimate with every inquiry</div>
+          </div>
+          <div class="zip-err" id="d1-zip-err">Please enter a valid 5-digit zip code.</div>
+          <p class="dh-zip-desc">Stop cleaning your gutters for good. Qualifying zip codes get access to <strong>up to 75% off gutter guard installation</strong>, plus an extra $200 off. <strong>Debris-proof, pest-resistant</strong>, and built to last with a <strong>lifetime warranty</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ MOBILE HERO (≤767px, original design) ═══════════════════ -->
+  <section class="hero" id="hero-mobile">
+    <div class="hero-logo-bar">
+      <a href="#top"><img class="hero-logo" src="https://affordablehome.com/lp-clog-free-gutters/assets/img/logo.svg" alt="Affordable Home"></a>
+    </div>
+    <div class="hero-content">
+      <div class="offer-pct">Up to <span class="amt">75% Off</span></div>
+      <div class="offer-style">Gutter Guard Installation</div>
+      <div class="offer-detail"><strong style="color:var(--orange)">+ An Extra $200 Off</strong> When You Purchase</div>
+      <div class="promo-row">
+        <div class="promo-pill"><i class="fas fa-shield-halved"></i> Lifetime Warranty</div>
+        <div class="promo-pill"><i class="fas fa-leaf"></i> Debris-Proof</div>
+        <div class="promo-pill"><i class="fas fa-broom"></i> Maintenance-Free</div>
+      </div>
+      <div class="zip-card" id="zip-card">
+        <div class="zip-card-label">Check if your zip code qualifies</div>
+        <div class="zip-input-row">
+          <input class="zip-input" id="p1-zip" type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="5" placeholder="Enter zip code" autocomplete="postal-code">
+          <button class="zip-btn" id="p1-zip-btn" onclick="goToForm()"><i class="fas fa-lock"></i> Check My Zip Code</button>
+        </div>
+        <div class="zip-step"><i class="fas fa-clock"></i> Takes 30 seconds &mdash; No obligation</div>
+        <div class="zip-microcopy"><i class="fas fa-gift"></i> Free no-obligation estimate with every inquiry</div>
+        <div class="zip-err" id="p1-zip-err">Please enter a valid 5-digit zip code.</div>
+        <p class="offer-copy" style="margin-top:16px;text-align:center">Stop cleaning your gutters for good. Qualifying zip codes get access to <strong>up to 75% off gutter guard installation</strong>, plus an extra $200 off. <strong>Debris-proof, pest-resistant, and built to last with a lifetime warranty.</strong></p>
+      </div>
+      <div class="trust-strip">
+        <div class="trust-item rating-pill"><i class="fas fa-star"></i> 4.8/5 Rating</div>
+        <div class="trust-item"><i class="fas fa-shield-halved"></i> Licensed &amp; Insured</div>
+        <div class="trust-item"><i class="fas fa-award"></i> Thousands of Reviews</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<section class="block benefits-section">
+  <div class="container">
+    <h2 class="sec-title">Say Goodbye to Clogged Gutters for Good</h2>
+    <div class="sec-sub">&nbsp;</div>
+    <div class="benefits-grid">
+      <div class="benefit"><div class="benefit-icon"><i class="fas fa-leaf"></i></div><div class="benefit-text"><strong>Debris-Proof:</strong> Keeps out leaves, pine needles, and roof grit year-round.</div></div>
+      <div class="benefit"><div class="benefit-icon"><i class="fas fa-broom"></i></div><div class="benefit-text"><strong>Maintenance-Free:</strong> End seasonal gutter cleaning and dangerous ladder climbs.</div></div>
+      <div class="benefit"><div class="benefit-icon"><i class="fas fa-bug-slash"></i></div><div class="benefit-text"><strong>Pest-Resistant:</strong> Prevents birds, rodents, and insects from nesting in your gutters.</div></div>
+      <div class="benefit"><div class="benefit-icon"><i class="fas fa-hammer"></i></div><div class="benefit-text"><strong>Durable Build:</strong> Weather-resistant materials engineered to last decades.</div></div>
+      <div class="benefit"><div class="benefit-icon"><i class="fas fa-wrench"></i></div><div class="benefit-text"><strong>Universal Fit:</strong> Works with your existing gutters and roof &mdash; no modifications needed.</div></div>
+      <div class="benefit featured"><div class="benefit-icon"><i class="fas fa-certificate"></i></div><div class="benefit-text"><strong>Lifetime Warranty:</strong> Full coverage included on every installation.</div></div>
+    </div>
+    <div class="benefits-cta">
+      <button class="benefits-cta-btn" onclick="scrollToZip()"><i class="fas fa-arrow-up"></i> Check My Zip Code</button>
+    </div>
+  </div>
+</section>
+
+<section class="block how-section">
+  <div class="container">
+    <p class="how-label">Protect Your Home</p>
+    <h2 class="sec-title">Upgrade Your Gutters In 3 Simple Steps</h2>
+    <div class="sec-sub" style="color:rgba(255,255,255,.7)">&nbsp;</div>
+    <div class="steps-grid">
+      <div class="step-item"><div class="step-circle">1</div><h3>Free Custom Quote</h3><p>We find you the lowest price to help you get new gutters within your budget.</p></div>
+      <div class="step-item"><div class="step-circle">2</div><h3>Schedule Installation</h3><p>A certified installer visits your home, measures, and gives you a firm price.</p></div>
+      <div class="step-item"><div class="step-circle">3</div><h3>Forget About Cleaning</h3><p>Sit back and enjoy. Your new gutters come with a lifetime no-clog guarantee.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block product-section">
+  <div class="container">
+    <h2 class="sec-title">Don't Settle For Cheap Gutters</h2>
+    <div class="sec-sub">&nbsp;</div>
+    <div class="product-layout">
+      <div class="product-image-wrap">
+        <img src="https://affordablehome.com/lp-clog-free-gutters/assets/img/product.png" alt="Clog-free gutter system" class="product-img" loading="lazy" />
+      </div>
+      <div class="product-copy">
+        <ul class="product-feats">
+          <li><span class="pf-ico"><i class="fas fa-ban"></i></span><div><h3>Never Clogs</h3><p>Advanced micro-mesh technology keeps leaves, debris, and pests out for good.</p></div></li>
+          <li><span class="pf-ico"><i class="fas fa-check"></i></span><div><h3>Maintenance-Free</h3><p>No more climbing ladders or scheduling cleanings. Just set it and forget it.</p></div></li>
+          <li><span class="pf-ico"><i class="fas fa-snowflake"></i></span><div><h3>Year-Round Coverage</h3><p>Works through rain, snow, ice, and falling leaves in every season.</p></div></li>
+          <li><span class="pf-ico"><i class="fas fa-shield-halved"></i></span><div><h3>Protects Your Home</h3><p>Keeps water away from your roof, walls, and foundation where it can cause the most damage.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block partners-section">
+  <div class="container">
+    <h2 class="sec-title">Our Partners</h2>
+    <div class="sec-sub">&nbsp;</div>
+    <div class="partners-grid">
+      <div class="partner-logo"><img src="https://guttersavings.com/v2/thompson%20creek%20logo.png" alt="Thompson Creek" loading="lazy"></div>
+      <div class="partner-logo"><img src="https://guttersavings.com/v2/leafguard%20logo.jpg" alt="LeafGuard" loading="lazy"></div>
+      <div class="partner-logo"><img src="https://guttersavings.com/v2/Gutterhelmet%20logo.png" alt="Gutter Helmet" loading="lazy"></div>
+      <div class="partner-logo"><img src="https://guttersavings.com/v2/All%20American%20gutter%20logo.png" alt="All American Gutter" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="block gallery-section">
+  <div class="container">
+    <h2 class="sec-title">Inspiration Gallery</h2>
+    <div class="sec-sub">Professional gutter guard installations</div>
+    <div class="gallery-grid">
+      <div class="gallery-img"><img src="https://guttersavings.com/wp-content/uploads/2026/02/gutter1.png" alt="Gutter guard installation 1" loading="lazy"></div>
+      <div class="gallery-img"><img src="https://guttersavings.com/wp-content/uploads/2026/02/gutter2.png" alt="Gutter guard installation 2" loading="lazy"></div>
+      <div class="gallery-img"><img src="https://guttersavings.com/wp-content/uploads/2026/02/gutter3.png" alt="Gutter guard installation 3" loading="lazy"></div>
+      <div class="gallery-img"><img src="https://guttersavings.com/wp-content/uploads/2026/02/gutter4.png" alt="Gutter guard installation 4" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="block problem-section">
+  <div class="container">
+    <div class="problem-grid">
+      <div class="problem-copy">
+        <h2>Don't Wait Until Your Gutters Damage Your Home</h2>
+        <p>Most homeowners don't think about their gutters until it's too late. Old, clogged, or damaged gutters can quietly cause serious and expensive problems &mdash; water that can't drain properly seeps beneath your roof, rots wood, leads to mold, ruins landscaping, and can even compromise your foundation. The worst part is that much of this damage happens out of sight, often for months before it becomes obvious.</p>
+      </div>
+      <div class="problem-img">
+        <img src="https://affordablehome.com/lp-clog-free-gutters/assets/img/why-image.jpg" alt="Clogged gutter filled with leaves" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block why-section">
+  <div class="container">
+    <h2 class="sec-title">Why Choose Affordable Home?</h2>
+    <div class="sec-sub">We connect you with top-rated, verified gutter professionals. See if you qualify.</div>
+    <div class="why-stats">
+      <div class="stat-card"><div class="stat-num">75%</div><div class="stat-label">Off Installation</div></div>
+      <div class="stat-card"><div class="stat-num">$200</div><div class="stat-label">Extra Savings</div></div>
+      <div class="stat-card"><div class="stat-num">4.8&#9733;</div><div class="stat-label">Avg Rating</div></div>
+    </div>
+    <div class="why-features">
+      <div class="why-feat"><div class="why-feat-icon"><i class="fas fa-industry"></i></div><div class="why-feat-text"><strong>Custom-fit</strong> &mdash; measured and installed for your exact gutter system</div></div>
+      <div class="why-feat"><div class="why-feat-icon"><i class="fas fa-hard-hat"></i></div><div class="why-feat-text"><strong>Professional installers</strong> with years of experience</div></div>
+      <div class="why-feat"><div class="why-feat-icon"><i class="fas fa-home"></i></div><div class="why-feat-text"><strong>Free estimate</strong> &mdash; no obligation, no pressure</div></div>
+      <div class="why-feat"><div class="why-feat-icon"><i class="fas fa-trophy"></i></div><div class="why-feat-text"><strong>Top-rated</strong> with thousands of verified 5-star reviews</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block faq-section">
+  <div class="container">
+    <h2 class="sec-title">Frequently Asked Questions</h2>
+    <div class="sec-sub">&nbsp;</div>
+    <div class="faq-list">
+      <details class="faq-item"><summary class="faq-q"><span>How much do gutter guards cost with this offer?</span><i class="fas fa-chevron-down faq-arrow"></i></summary><div class="faq-a">With this savings event, qualifying homeowners receive up to 75% off installation plus an extra $200 off their purchase. Exact pricing is determined during your free no-obligation estimate.</div></details>
+      <details class="faq-item"><summary class="faq-q"><span>How long does gutter guard installation take?</span><i class="fas fa-chevron-down faq-arrow"></i></summary><div class="faq-a">Most gutter guard installations are completed in just a few hours. Professional installers work efficiently to minimize disruption to your daily routine.</div></details>
+      <details class="faq-item"><summary class="faq-q"><span>Will gutter guards work with my existing gutters?</span><i class="fas fa-chevron-down faq-arrow"></i></summary><div class="faq-a">Yes! The gutter guards feature a universal fit design that works with virtually all existing gutter systems and roof types &mdash; no modifications needed.</div></details>
+      <details class="faq-item"><summary class="faq-q"><span>What does the lifetime warranty cover?</span><i class="fas fa-chevron-down faq-arrow"></i></summary><div class="faq-a">The lifetime warranty covers defects in materials and workmanship for as long as you own your home. Your installer will walk you through the full warranty details during your consultation.</div></details>
+      <details class="faq-item"><summary class="faq-q"><span>Is the estimate really free with no obligation?</span><i class="fas fa-chevron-down faq-arrow"></i></summary><div class="faq-a">Absolutely. The estimate is 100% free with no obligation to purchase. A certified gutter specialist will inspect your gutters, explain your options, and provide exact pricing for your home.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>Are you done cleaning your gutters for good?</h2>
+    <div class="cta-zip-row">
+      <input class="zip-input" id="p2-zip" type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="5" placeholder="Enter zip code" autocomplete="postal-code">
+      <button class="zip-btn" id="p2-zip-btn" onclick="goToFormBottom()"><i class="fas fa-lock"></i> Check My Zip</button>
+    </div>
+  </div>
+</section>
+
+<!-- social-proof toast -->
+<div class="claim-toast" id="claim-toast">
+  <span class="ct-icon">✅</span>
+  <div>
+    <div class="ct-text"><strong id="ct-name">Sarah M.</strong> in <strong id="ct-city">Atlanta</strong> just requested their free quote</div>
+    <div class="ct-time" id="ct-time">2 minutes ago</div>
+  </div>
+</div>
+
+<!-- sticky bottom CTA -->
+<div class="sticky-cta" id="sticky-cta">
+  <div class="sticky-cta-text">Up to 75% Off Gutter Guards<span>+ an extra $200 off</span></div>
+  <a href="#top" class="sticky-cta-btn" onclick="setTimeout(scrollToZip,300)">Get Quote</a>
+</div>
+
+<!-- qualify celebration flash -->
+<div class="qualify-flash" id="qualify-flash">
+  <div class="qf-check"><i class="fas fa-check"></i></div>
+  <div class="qf-title">Your Area <span class="amt">Qualifies!</span></div>
+  <div class="qf-sub">ZIP <span class="qf-zip" id="qf-zip"></span> is eligible for up to <strong>75% off</strong> + an extra <strong>$200 off</strong>. Loading your quote form&hellip;</div>
+</div>
+
+<footer>
+  <img src="https://affordablehome.com/lp-clog-free-gutters/assets/img/logo.svg" alt="Affordable Home" class="footer-logo" />
+  <p class="copyright">&copy; 2026 Affordable Home. All Rights Reserved.</p>
+  <p>Affordable Home is a lead generation service connecting homeowners with local gutter installation professionals. We are not a contractor.</p>
+  <p class="footer-links">
+    <a href="/lp-clog-free-gutters/privacy">Privacy Policy</a>
+    <a href="/lp-clog-free-gutters/terms">Terms &amp; Conditions</a>
+  </p>
+</footer>
+
+<input type="hidden" id="transid" value="" />
+
+<script type="text/javascript">
+(function() {
+  var tf = document.createElement('script'); tf.type = 'text/javascript'; tf.async = true;
+  tf.src = ("https:" == document.location.protocol ? 'https' : 'http') +
+    "://api.trustedform.com/trustedform.js?field=xxTrustedFormCertUrl&ping_field=xxTrustedFormPingUrl&l=" +
+    new Date().getTime() + Math.random();
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s);
+})();
+</script>
+<noscript><img src="https://api.trustedform.com/ns.gif" alt=""></noscript>
+
+<script>
+(function(){
+  var params = new URLSearchParams(location.search);
+  function loadCakeSdk(){
+    if (typeof CKMLib === 'object') return;
+    if (typeof CKMLib === 'string') return;
+    CKMLib = 'loading';
+    var pix = document.createElement('script');
+    pix.async = true;
+    pix.src = '//cakecdn.com/jssdk/lib.js';
+    document.getElementsByTagName('head')[0].appendChild(pix);
+  }
+  loadCakeSdk();
+  var hasTracking = params.has('ckmsc') || params.has('ckmc') || params.has('ckmat');
+  if (hasTracking) {
+    var c = { name: 'cp', args: {
+      gclid_param: 'gclid', bingkw_param: 'ckm_kw', sc_param: 'ckmsc', attr_param: 'ckmscn',
+      crtv_param: 'ckmc', tpcrid_param: 'ckmcrn', cookie_dom: 'bbyltfl.com',
+      site_dom: '.' + location.hostname.split('.').slice(-2).join('.'),
+      s1_param: 's1', s2_param: 's2', s3_param: 's3', s4_param: 's4', s5_param: 's5' } };
+    if (typeof CKMLib === 'object') { CKMLib.run(c); }
+    else { (window._ckm = window._ckm || []).push(c); }
+  }
+  function getOfferId(){
+    return params.get('o')
+      || (typeof window.CAKE_OFFER_ID === 'number' ? String(window.CAKE_OFFER_ID) : window.CAKE_OFFER_ID)
+      || (document.querySelector('meta[name="cake-offer-id"]') || {}).content
+      || (document.body && document.body.getAttribute('data-offer-id')) || '';
+  }
+  var sdkWaitAttempts = 0;
+  function setTransidWithCookie(){
+    var el = document.getElementById('transid');
+    if (!el || el.value) return;
+    var urlT = params.get('transid');
+    if (urlT) { el.value = urlT; return; }
+    var oid = getOfferId();
+    if (typeof CKMLib !== 'object' || !CKMLib.getCookie) {
+      if (++sdkWaitAttempts < 75) setTimeout(setTransidWithCookie, 200);
+      return;
+    }
+    CKMLib.getCookie('ckmsid', { ms: 200, max: 75, callback: function(sid){
+      if (sid && !el.value) { el.value = oid ? (oid + '-' + sid) : sid; }
+    }});
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setTransidWithCookie);
+  } else { setTransidWithCookie(); }
+})();
+</script>
+
+<script>
+(function(){
+  var params = new URLSearchParams(window.location.search);
+  var trackingKeys = ['pubid','s1','s2','s3','transid','ckmreqid','ckmat','cid'];
+  trackingKeys.forEach(function(k){
+    var v = params.get(k);
+    if(v !== null) sessionStorage.setItem('ah_'+k, v);
+  });
+})();
+
+function buildFormUrl(zip) {
+  var base = 'form.html';
+  var u = new URL(base, window.location.origin + window.location.pathname.replace(/[^\/]*$/,''));
+  new URLSearchParams(window.location.search).forEach(function(v,k){ u.searchParams.set(k,v); });
+  ['pubid','s1','s2','s3','transid','ckmreqid','ckmat','cid'].forEach(function(k){
+    if(!u.searchParams.has(k) || !u.searchParams.get(k)){
+      var stored = sessionStorage.getItem('ah_'+k);
+      if(stored) u.searchParams.set(k, stored);
+    }
+  });
+  if(!u.searchParams.get('transid')){
+    var tidEl = document.getElementById('transid');
+    if(tidEl && tidEl.value) u.searchParams.set('transid', tidEl.value);
+  }
+  if(zip && zip.length === 5) u.searchParams.set('zip', zip);
+  return u.toString();
+}
+
+/* ── Which hero is currently on-screen? (desktop vs. mobile variant) ── */
+function isVisible(el){ return !!el && el.offsetParent !== null; }
+function getActiveZipInput(){
+  var m = document.getElementById('p1-zip');
+  if (isVisible(m)) return m;
+  var d = document.getElementById('d1-zip');
+  if (isVisible(d)) return d;
+  return m || d;
+}
+function getActiveZipCard(){
+  var m = document.getElementById('zip-card');
+  if (isVisible(m)) return m;
+  var d = document.getElementById('d1-zip-card');
+  if (isVisible(d)) return d;
+  return m || d;
+}
+
+(function(){
+  var ids = [
+    {input:'p1-zip', err:'p1-zip-err'},
+    {input:'d1-zip', err:'d1-zip-err'},
+    {input:'p2-zip', err:null}
+  ];
+  ids.forEach(function(cfg){
+    var el = document.getElementById(cfg.input);
+    if(!el) return;
+    el.addEventListener('input', function(){
+      this.value = this.value.replace(/\D/g,'').slice(0,5);
+      if(cfg.err){
+        var err = document.getElementById(cfg.err);
+        if(err && this.value.length === 5) err.classList.remove('show');
+      }
+    });
+    el.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' && this.value.length === 5){
+        if(cfg.input === 'p2-zip') goToFormBottom();
+        else goToForm();
+      }
+    });
+  });
+})();
+
+function showQualifyAndGo(zip){
+  var flash = document.getElementById('qualify-flash');
+  var zEl = document.getElementById('qf-zip');
+  if(zEl) zEl.textContent = zip;
+  if(flash) flash.classList.add('show');
+  setTimeout(function(){ window.location.href = buildFormUrl(zip); }, 1400);
+}
+
+function goToForm(){
+  var input = getActiveZipInput();
+  var zip = input.value.replace(/\D/g,'').slice(0,5);
+  var errId = (input.id === 'd1-zip') ? 'd1-zip-err' : 'p1-zip-err';
+  if(zip.length !== 5){ document.getElementById(errId).classList.add('show'); input.focus(); return; }
+  showQualifyAndGo(zip);
+}
+function goToFormBottom(){
+  var zip = document.getElementById('p2-zip').value.replace(/\D/g,'').slice(0,5);
+  if(zip.length !== 5){ document.getElementById('p2-zip').focus(); return; }
+  showQualifyAndGo(zip);
+}
+function scrollToZip(){
+  var card = getActiveZipCard();
+  card.scrollIntoView({behavior:'smooth',block:'center'});
+  setTimeout(function(){ getActiveZipInput().focus(); }, 500);
+}
+
+// Sticky bottom CTA — show when the active hero zip card scrolls out of view
+(function(){
+  var sticky = document.getElementById('sticky-cta');
+  if(!sticky || !('IntersectionObserver' in window)) return;
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ sticky.classList.remove('show'); }
+      else { sticky.classList.add('show'); }
+    });
+  },{threshold:0});
+  var current = null;
+  function bind(){
+    var card = getActiveZipCard();
+    if(card === current) return;
+    if(current) observer.unobserve(current);
+    if(card){ observer.observe(card); current = card; }
+  }
+  bind();
+  window.addEventListener('resize', bind);
+})();
+
+// Social-proof toast — cycling "just requested" notifications
+(function(){
+  var names = [
+    {n:'Sarah M.',c:'Atlanta'},{n:'James K.',c:'Charlotte'},{n:'Linda R.',c:'Dallas'},
+    {n:'Robert T.',c:'Nashville'},{n:'Karen P.',c:'Raleigh'},{n:'Michael S.',c:'Houston'},
+    {n:'Jennifer L.',c:'Tampa'},{n:'David W.',c:'Phoenix'},{n:'Maria G.',c:'Denver'},
+    {n:'Chris H.',c:'Columbus'},{n:'Amy D.',c:'Richmond'},{n:'Brian F.',c:'Memphis'},
+    {n:'Susan B.',c:'Louisville'},{n:'Kevin C.',c:'Indianapolis'},{n:'Lisa N.',c:'Charleston'},
+    {n:'Mark T.',c:'Austin'},{n:'Donna R.',c:'Savannah'},{n:'Steven P.',c:'Knoxville'},
+    {n:'Rachel W.',c:'Birmingham'},{n:'Tom H.',c:'San Antonio'}
+  ];
+  var times = ['just now','1 minute ago','2 minutes ago','3 minutes ago','5 minutes ago'];
+  var toast = document.getElementById('claim-toast');
+  if(!toast) return;
+  var idx = 0;
+  function showToast(){
+    var person = names[idx % names.length];
+    document.getElementById('ct-name').textContent = person.n;
+    document.getElementById('ct-city').textContent = person.c;
+    document.getElementById('ct-time').textContent = times[Math.floor(Math.random()*times.length)];
+    // sit above the sticky bar if it's visible
+    var sticky = document.getElementById('sticky-cta');
+    if(sticky && sticky.classList.contains('show')) toast.classList.add('show-when-sticky');
+    else toast.classList.remove('show-when-sticky');
+    toast.classList.add('show');
+    setTimeout(function(){ toast.classList.remove('show'); }, 4500);
+    idx++;
+  }
+  setTimeout(function(){
+    showToast();
+    setInterval(showToast, 30000 + Math.random()*20000);
+  }, 10000);
+})();
+</script>
+
+</body>
+</html>

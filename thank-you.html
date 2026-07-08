@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You | Affordable Home</title>
+  <meta name="description" content="Your free gutter quote request has been received. A certified specialist will be in touch shortly." />
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    :root{
+      --navy:#0A1F3C; --navy-deep:#061429; --navy-mid:#13345e;
+      --orange:#F97316; --orange-dk:#ea6c0f; --orange-soft:rgba(249,115,22,.12);
+      --ink:#1A1A1A; --body:#555;
+      --g50:#F5F5F5; --g100:#EEF0F3; --g300:#D1D5DB; --g700:#374151; --g900:#111827;
+      --shadow:0 8px 40px rgba(10,31,60,.18);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.6;min-height:100vh;display:flex;flex-direction:column}
+    img{max-width:100%;display:block}
+
+    .hdr{background:var(--navy);border-bottom:1px solid var(--navy-mid)}
+    .hdr-in{max-width:1100px;margin:0 auto;display:flex;justify-content:center;align-items:center;padding:14px 20px}
+    .hdr-logo img{height:46px;width:auto}
+
+    /* hero confirmation */
+    .ty-hero{position:relative;overflow:hidden;background:var(--navy);flex:1;display:flex;align-items:center;justify-content:center;padding:56px 20px}
+    .ty-hero::before{content:'';position:absolute;inset:0;background:url('https://affordablehome.com/lp-clog-free-gutters/assets/img/hero.jpg') center/cover no-repeat;opacity:.5}
+    .ty-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,31,60,.55),rgba(10,31,60,.78))}
+    .ty-card{position:relative;z-index:2;background:#fff;border-radius:16px;box-shadow:var(--shadow);max-width:600px;width:100%;padding:40px 32px;text-align:center}
+    .ty-check{width:88px;height:88px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;margin:0 auto 22px;animation:ty-pop .5s cubic-bezier(.18,1.4,.4,1)}
+    @keyframes ty-pop{0%{transform:scale(0)}100%{transform:scale(1)}}
+    .ty-check i{color:#fff;font-size:42px}
+    .ty-card h1{font-size:28px;font-weight:900;color:var(--navy);line-height:1.2;margin-bottom:10px}
+    .ty-card h1 .accent{color:var(--orange)}
+    .ty-lead{font-size:16px;color:var(--body);max-width:440px;margin:0 auto 28px}
+
+    /* next steps */
+    .ty-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 auto 28px;text-align:left}
+    .ty-step{background:var(--g50);border:1px solid var(--g100);border-radius:12px;padding:18px 16px}
+    .ty-step-ico{width:38px;height:38px;border-radius:9px;background:var(--orange-soft);display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+    .ty-step-ico i{color:var(--orange);font-size:16px}
+    .ty-step h3{font-size:14px;font-weight:800;color:var(--navy);margin-bottom:4px}
+    .ty-step p{font-size:12.5px;color:var(--body);line-height:1.45}
+
+    .ty-phone{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--orange-soft);border:1px solid rgba(249,115,22,.3);border-radius:12px;padding:14px 18px;margin-bottom:8px}
+    .ty-phone i{color:var(--orange);font-size:18px}
+    .ty-phone span{font-size:14px;font-weight:700;color:var(--navy)}
+    .ty-phone strong{color:var(--orange)}
+    .ty-note{font-size:12px;color:var(--body)}
+
+    .trust-strip{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:26px;flex-wrap:wrap}
+    .trust-item{display:flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;color:var(--g700);white-space:nowrap}
+    .trust-item i{color:var(--orange);font-size:14px}
+
+    footer{background:var(--navy-deep);padding:32px 20px;text-align:center}
+    .footer-logo{width:140px;margin:0 auto 12px}
+    footer p{color:rgba(255,255,255,.65);font-size:12.5px;line-height:1.6;max-width:700px;margin:0 auto}
+    footer .copyright{color:rgba(255,255,255,.85);font-weight:500;margin-bottom:8px}
+    .footer-links{margin-top:12px}
+    .footer-links a{color:rgba(255,255,255,.7);font-size:13px;text-decoration:underline;margin:0 8px}
+
+    @media(max-width:560px){
+      .ty-card{padding:32px 22px}
+      .ty-card h1{font-size:23px}
+      .ty-steps{grid-template-columns:1fr;gap:10px}
+      .ty-step{display:flex;align-items:flex-start;gap:12px}
+      .ty-step-ico{margin-bottom:0;flex-shrink:0}
+    }
+  </style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="hdr-in">
+    <a href="index.html"><div class="hdr-logo"><img src="https://affordablehome.com/lp-clog-free-gutters/assets/img/logo.svg" alt="Affordable Home"></div></a>
+  </div>
+</header>
+
+<main class="ty-hero">
+  <div class="ty-card">
+    <div class="ty-check"><i class="fas fa-check"></i></div>
+    <h1 id="ty-headline">You're All Set<span class="accent">!</span></h1>
+    <p class="ty-lead">Your free, no-obligation gutter quote request has been received. A certified specialist will reach out shortly to confirm the details and schedule your estimate.</p>
+
+    <div class="ty-steps">
+      <div class="ty-step">
+        <div class="ty-step-ico"><i class="fas fa-phone"></i></div>
+        <h3>1. We'll Call You</h3>
+        <p>A specialist confirms your details and answers any questions.</p>
+      </div>
+      <div class="ty-step">
+        <div class="ty-step-ico"><i class="fas fa-calendar-check"></i></div>
+        <h3>2. Free Estimate</h3>
+        <p>We measure your home and give you a firm, no-pressure price.</p>
+      </div>
+      <div class="ty-step">
+        <div class="ty-step-ico"><i class="fas fa-house-circle-check"></i></div>
+        <h3>3. Enjoy Clog-Free</h3>
+        <p>Professional install backed by a lifetime no-clog guarantee.</p>
+      </div>
+    </div>
+
+    <div class="ty-phone">
+      <i class="fas fa-circle-info"></i>
+      <span>Keep an eye on your phone &mdash; expect a call from <strong>an unknown number</strong>.</span>
+    </div>
+    <p class="ty-note">Didn't mean to submit? No problem &mdash; simply let us know when we call.</p>
+
+    <div class="trust-strip">
+      <div class="trust-item"><i class="fas fa-shield-halved"></i> Licensed &amp; Insured</div>
+      <div class="trust-item"><i class="fas fa-star"></i> 4.8/5 Rating</div>
+      <div class="trust-item"><i class="fas fa-award"></i> Thousands of Reviews</div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <img src="https://affordablehome.com/lp-clog-free-gutters/assets/img/logo.svg" alt="Affordable Home" class="footer-logo" />
+  <p class="copyright">&copy; 2026 Affordable Home. All Rights Reserved.</p>
+  <p>Affordable Home is a lead generation service connecting homeowners with local gutter installation professionals. We are not a contractor.</p>
+  <p class="footer-links">
+    <a href="/lp-clog-free-gutters/privacy">Privacy Policy</a>
+    <a href="/lp-clog-free-gutters/terms">Terms &amp; Conditions</a>
+  </p>
+</footer>
+
+<script>
+  // Personalize headline if a first name was passed in the URL (?fname=)
+  (function(){
+    var params = new URLSearchParams(window.location.search);
+    var fname = params.get('fname');
+    if(fname){
+      fname = fname.replace(/[^a-zA-Z'\- ]/g,'').trim();
+      if(fname){
+        var h = document.getElementById('ty-headline');
+        var clean = fname.charAt(0).toUpperCase() + fname.slice(1);
+        h.innerHTML = clean + ", you're all set<span class=\"accent\">!</span>";
+      }
+    }
+  })();
+</script>
+
+</body>
+</html>

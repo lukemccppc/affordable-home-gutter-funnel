@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Complete Your Free Gutter Quote | Affordable Home</title>
+  <meta name="description" content="Just a few details and your free, no-obligation gutter quote is on its way." />
+  <meta name="cake-offer-id" content="249" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    :root{
+      --navy:#0A1F3C; --navy-deep:#061429; --navy-mid:#13345e;
+      --orange:#F97316; --orange-dk:#ea6c0f;
+      --ink:#1A1A1A; --body:#555;
+      --g50:#F5F5F5; --g100:#EEF0F3; --g300:#D1D5DB; --g700:#374151; --g900:#111827;
+      --shadow:0 8px 40px rgba(10,31,60,.18);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--navy);-webkit-font-smoothing:antialiased;line-height:1.6;min-height:100vh}
+    img{max-width:100%;display:block}
+    .event-banner{background:linear-gradient(90deg,var(--navy),var(--navy-mid),var(--navy));padding:10px 20px;text-align:center;color:#fff;font-size:12px;font-weight:700;letter-spacing:.5px}
+    .event-banner i{margin:0 6px;color:var(--orange)}
+    .hdr{background:#fff;border-bottom:1px solid var(--g100)}
+    .hdr-in{max-width:1100px;margin:0 auto;display:flex;justify-content:center;align-items:center;padding:14px 20px}
+    .hdr-logo img{height:46px;width:auto}
+    .wrap{position:relative;overflow:hidden;min-height:calc(100vh - 75px);display:flex;align-items:flex-start;justify-content:center;padding:32px 16px 56px}
+    .wrap::before{content:'';position:absolute;inset:0;background:url('https://affordablehome.com/lp-clog-free-gutters/assets/img/hero.jpg') center/cover no-repeat;opacity:.62}
+    .wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,31,60,.45),rgba(10,31,60,.68))}
+    .form-card{position:relative;z-index:2;background:#fff;border-radius:20px;padding:32px;width:100%;max-width:560px;box-shadow:0 20px 60px rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.5)}
+    .form-head{text-align:center;margin-bottom:20px}
+    .form-head h1{font-family:'Source Serif 4',serif;font-size:26px;font-weight:700;color:var(--navy);line-height:1.2}
+    .form-head p{font-size:14px;color:var(--body);margin-top:6px}
+    .form-head .accent{color:var(--orange);font-weight:700}
+    .qualified{display:flex;align-items:center;justify-content:center;gap:8px;background:rgba(249,115,22,.12);border:1px solid rgba(249,115,22,.35);color:var(--orange);font-size:14px;font-weight:800;border-radius:10px;padding:12px 14px;margin-bottom:20px;animation:qual-pop .45s cubic-bezier(.18,1.4,.4,1)}
+    .qualified i{font-size:16px}
+    @keyframes qual-pop{0%{transform:scale(.85);opacity:0}100%{transform:scale(1);opacity:1}}
+    .progress-wrap{margin-bottom:24px}
+    .progress-track{height:6px;background:var(--g300);border-radius:99px;overflow:hidden}
+    .progress-fill{height:100%;background:var(--orange);border-radius:99px;transition:width 300ms ease}
+    .step-count{font-size:12px;color:var(--body);margin-top:8px;text-align:right;font-weight:600}
+    .form-step{display:none;opacity:0;transition:opacity 150ms ease}
+    .form-step.active{display:block;opacity:1}
+    .form-step h2{font-family:'Source Serif 4',serif;font-size:21px;font-weight:700;color:var(--navy);margin-bottom:20px}
+    .field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .field-row-addr{grid-template-columns:3fr 1fr}
+    .field{display:flex;flex-direction:column;margin-bottom:16px}
+    .field label{font-size:13px;font-weight:600;color:var(--ink);margin-bottom:6px}
+    .field input,.field select{padding:12px 14px;font-size:15px;font-family:'Inter',sans-serif;border:1.5px solid var(--g300);border-radius:8px;color:var(--ink);background:#fff;outline:none;transition:border-color 150ms;width:100%}
+    .field input:focus,.field select:focus{border-color:var(--orange)}
+    .field input.error,.field select.error{border-color:#ef4444}
+    .field-error{font-size:12px;color:#ef4444;margin-top:4px;display:none}
+    .field-error.visible{display:block}
+    .zip-hint{font-size:11px;color:#888;margin-top:4px}
+    .btn-orange{width:100%;padding:15px;background:var(--orange);color:#fff;font-family:'Inter',sans-serif;font-size:16px;font-weight:800;border:none;border-radius:8px;cursor:pointer;margin-top:8px;transition:background 150ms,transform 100ms;letter-spacing:.3px}
+    .btn-orange:hover{background:var(--orange-dk)}
+    .btn-orange:active{transform:scale(.99)}
+    .btn-back{display:inline-block;font-size:13px;color:var(--body);text-decoration:none;cursor:pointer;margin-top:12px;background:none;border:none;font-family:'Inter',sans-serif;padding:0}
+    .btn-back:hover{color:var(--orange)}
+    .form-disclaimer{font-size:11px;line-height:1.5;color:#888;margin-top:14px}
+    .form-disclaimer a{color:#888;text-decoration:underline}
+    @media (max-width:540px){.field-row,.field-row-addr{grid-template-columns:1fr}.form-card{padding:24px 18px}}
+
+    /* submission overlay */
+    .submit-overlay{position:fixed;inset:0;z-index:300;background:rgba(10,31,60,.96);display:none;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:24px}
+    .submit-overlay.show{display:flex}
+    .spinner{width:56px;height:56px;border:4px solid rgba(255,255,255,.2);border-top-color:var(--orange);border-radius:50%;animation:spin 1s linear infinite;margin-bottom:22px}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .submit-overlay h3{font-size:22px;font-weight:800;color:#fff;margin-bottom:6px}
+    .submit-overlay p{font-size:14px;color:rgba(255,255,255,.7);max-width:320px}
+  </style>
+</head>
+<body>
+
+<div class="event-banner"><i class="fas fa-gift"></i> GUTTER GUARD SAVINGS EVENT <i class="fas fa-gift"></i> Limited Time Offer — Ends Soon!</div>
+<header class="hdr">
+  <div class="hdr-in">
+    <a href="index.html"><div class="hdr-logo"><img src="https://affordablehome.com/lp-clog-free-gutters/assets/img/logo.svg" alt="Affordable Home" style="filter:brightness(0) saturate(100%) invert(11%) sepia(38%) saturate(1500%) hue-rotate(190deg)"></div></a>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="form-card">
+    <div class="form-head">
+      <h1>You're Almost There!</h1>
+      <p>Complete your <span class="accent">free, no-obligation</span> gutter quote.</p>
+    </div>
+    <div class="qualified" id="qualified-badge" style="display:none">
+      <i class="fas fa-circle-check"></i> <span id="qualified-text">Great news &mdash; your area qualifies!</span>
+    </div>
+
+    <form id="pii" onsubmit="return false;">
+      <div class="progress-wrap">
+        <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width:33%"></div></div>
+        <div class="step-count" id="step-count">Step 1 of 3</div>
+      </div>
+
+      <!-- Step 1: Gutter Age -->
+      <div class="form-step active" id="step-1">
+        <h2>How old are your current gutters?</h2>
+        <div class="field">
+          <select id="gutter-age">
+            <option value="">Select an option</option>
+            <option>Less than 5 years</option>
+            <option>5&ndash;10 years</option>
+            <option>10&ndash;20 years</option>
+            <option>20+ years</option>
+            <option>I don't know</option>
+          </select>
+          <span class="field-error" id="err-gutter-age">Please select an option.</span>
+        </div>
+        <button type="button" class="btn-orange" onclick="nextStep(1)">Next &rarr;</button>
+      </div>
+
+      <!-- Step 2: Home Size -->
+      <div class="form-step" id="step-2">
+        <h2>Approximate square footage of your home</h2>
+        <div class="field">
+          <select id="sqft">
+            <option value="">Select an option</option>
+            <option>Under 1,000 sq ft</option>
+            <option>1,000&ndash;1,500 sq ft</option>
+            <option>1,500&ndash;2,000 sq ft</option>
+            <option>2,000&ndash;2,500 sq ft</option>
+            <option>2,500&ndash;3,000 sq ft</option>
+            <option>3,000+ sq ft</option>
+          </select>
+          <span class="field-error" id="err-sqft">Please select an option.</span>
+        </div>
+        <button type="button" class="btn-orange" onclick="nextStep(2)">Next &rarr;</button>
+        <br /><button type="button" class="btn-back" onclick="prevStep(2)">&larr; Back</button>
+      </div>
+
+      <!-- Step 3: Contact + Phone -->
+      <div class="form-step" id="step-3">
+        <h2>Where should we send your quote?</h2>
+        <div class="field-row">
+          <div class="field">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="fname" placeholder="Jane" autocomplete="given-name" />
+            <span class="field-error" id="err-first-name">Please enter your first name.</span>
+          </div>
+          <div class="field">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="lname" placeholder="Smith" autocomplete="family-name" />
+            <span class="field-error" id="err-last-name">Please enter your last name.</span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" autocomplete="email" />
+          <span class="field-error" id="err-email">Please enter a valid email address.</span>
+        </div>
+        <div class="field-row field-row-addr">
+          <div class="field">
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="address" placeholder="123 Main St" autocomplete="street-address" />
+            <span class="field-error" id="err-address">Please enter your street address.</span>
+          </div>
+          <div class="field">
+            <label for="zip">ZIP Code</label>
+            <input type="text" id="zip" name="zip" placeholder="Detecting&hellip;" maxlength="5" autocomplete="postal-code" />
+            <span class="field-error" id="err-zip">Enter a valid 5-digit ZIP.</span>
+            <span class="zip-hint" id="zip-hint"></span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" maxlength="14" autocomplete="tel" />
+          <span class="field-error" id="err-phone">Please enter a valid phone number.</span>
+        </div>
+        <button type="button" class="btn-orange" onclick="submitForm()">Get My Free Quote &rarr;</button>
+        <p class="form-disclaimer">By clicking &ldquo;Get My Free Quote,&rdquo; you authorize Affordable Home and one or more of its marketing partners to contact you at the phone number and email you provided &mdash; including by autodialed and prerecorded calls, text messages, and emails &mdash; about gutter products and services, even if your number is on a Do Not Call list. Consent is not a condition of purchase; message and data rates may apply. By submitting, you agree to our <a href="/lp-clog-free-gutters/privacy">Privacy Policy</a> and <a href="/lp-clog-free-gutters/terms">Terms &amp; Conditions</a>.</p>
+        <br /><button type="button" class="btn-back" onclick="prevStep(3)">&larr; Back</button>
+      </div>
+
+      <!-- Hidden tracking / attribution -->
+      <input id="city"    name="city"    type="hidden" value="" />
+      <input id="state"   name="state"   type="hidden" value="" />
+      <input id="ip"      name="ip"      type="hidden" value="50.169.65.10" />
+      <input id="lp"      name="lp"      type="hidden" value="https://affordablehome.com/lp-clog-free-gutters/form.html" />
+      <input id="lpd"     name="lpd"     type="hidden" value="https://affordablehome.com/lp-clog-free-gutters/" />
+      <input id="ua"      name="ua"      type="hidden" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" />
+      <input id="transid" name="transid" type="hidden" value="" />
+      <input id="pubid"   name="pubid"   type="hidden" value="" />
+      <input id="s1"      name="s1"      type="hidden" value="" />
+      <input id="s2"      name="s2"      type="hidden" value="" />
+      <input id="s3"      name="s3"      type="hidden" value="" />
+      <input id="cid"     name="cid"     type="hidden" value="" />
+    </form>
+  </div>
+</div>
+
+<!-- submission overlay -->
+<div class="submit-overlay" id="submit-overlay">
+  <div class="spinner"></div>
+  <h3>Submitting your request&hellip;</h3>
+  <p>Matching you with a top-rated installer in your area. One moment.</p>
+</div>
+
+<!-- TrustedForm certificate (canon, do not modify) -->
+<script type="text/javascript">
+(function() {
+  var tf = document.createElement('script'); tf.type = 'text/javascript'; tf.async = true;
+  tf.src = ("https:" == document.location.protocol ? 'https' : 'http') +
+    "://api.trustedform.com/trustedform.js?field=xxTrustedFormCertUrl&ping_field=xxTrustedFormPingUrl&l=" +
+    new Date().getTime() + Math.random();
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s);
+})();
+</script>
+<noscript><img src="https://api.trustedform.com/ns.gif" alt=""></noscript>
+
+<!-- Cake/Cookie tracking script v2026.1 — sets transid (bounded retry) -->
+<script>
+(function(){
+  var params = new URLSearchParams(location.search);
+  function loadCakeSdk(){
+    if (typeof CKMLib === 'object') return;
+    if (typeof CKMLib === 'string') return;
+    CKMLib = 'loading';
+    var pix = document.createElement('script');
+    pix.async = true;
+    pix.src = '//cakecdn.com/jssdk/lib.js';
+    document.getElementsByTagName('head')[0].appendChild(pix);
+  }
+  loadCakeSdk();
+  var hasTracking = params.has('ckmsc') || params.has('ckmc') || params.has('ckmat');
+  if (hasTracking) {
+    var c = { name: 'cp', args: {
+      gclid_param: 'gclid', bingkw_param: 'ckm_kw', sc_param: 'ckmsc', attr_param: 'ckmscn',
+      crtv_param: 'ckmc', tpcrid_param: 'ckmcrn', cookie_dom: 'bbyltfl.com',
+      site_dom: '.' + location.hostname.split('.').slice(-2).join('.'),
+      s1_param: 's1', s2_param: 's2', s3_param: 's3', s4_param: 's4', s5_param: 's5' } };
+    if (typeof CKMLib === 'object') { CKMLib.run(c); }
+    else { (window._ckm = window._ckm || []).push(c); }
+  }
+  function getOfferId(){
+    return params.get('o')
+      || (typeof window.CAKE_OFFER_ID === 'number' ? String(window.CAKE_OFFER_ID) : window.CAKE_OFFER_ID)
+      || (document.querySelector('meta[name="cake-offer-id"]') || {}).content
+      || (document.body && document.body.getAttribute('data-offer-id')) || '';
+  }
+  var sdkWaitAttempts = 0;
+  function setTransidWithCookie(){
+    var el = document.getElementById('transid');
+    if (!el || el.value) return;
+    var urlT = params.get('transid');
+    if (urlT) { el.value = urlT; return; }
+    var oid = getOfferId();
+    if (typeof CKMLib !== 'object' || !CKMLib.getCookie) {
+      if (++sdkWaitAttempts < 75) setTimeout(setTransidWithCookie, 200);
+      return;
+    }
+    CKMLib.getCookie('ckmsid', { ms: 200, max: 75, callback: function(sid){
+      if (sid && !el.value) { el.value = oid ? (oid + '-' + sid) : sid; }
+    }});
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setTransidWithCookie);
+  } else { setTransidWithCookie(); }
+})();
+</script>
+<!-- end Cake/Cookie tracking script -->
+
+<script>
+  let currentStep = 1;
+  const TOTAL_STEPS = 3;
+
+  // ── Populate hidden tracking fields + zip from URL params ──
+  (function(){
+    var params = new URLSearchParams(window.location.search);
+    function setFrom(key, id){
+      var v = params.get(key);
+      if(v === null || v === '') { var s = sessionStorage.getItem('ah_'+key); if(s) v = s; }
+      if(v) { var el = document.getElementById(id); if(el) el.value = v; }
+    }
+    ['pubid','s1','s2','s3','transid','cid'].forEach(function(k){ setFrom(k, k); });
+
+    // Prefill zip passed from the landing page
+    var zip = params.get('zip');
+    if(zip && /^\d{5}$/.test(zip)){
+      var zipEl = document.getElementById('zip');
+      if(zipEl){
+        zipEl.value = zip.substring(0,5);
+        document.getElementById('zip-hint').textContent = 'From your search';
+      }
+      var badge = document.getElementById('qualified-badge');
+      if(badge){ badge.style.display = 'flex'; document.getElementById('qualified-text').textContent = 'Great news — ' + zip + ' qualifies!'; }
+      // kick off geocode early so city/state are ready at submit
+      geocodeZip();
+    }
+  })();
+
+  // ── Phone masking ──
+  document.getElementById('phone').addEventListener('keyup', function() {
+    let val = this.value.replace(/\D/g, '').substring(0, 10);
+    if (val.length >= 7) val = '(' + val.substring(0,3) + ') ' + val.substring(3,6) + '-' + val.substring(6);
+    else if (val.length >= 4) val = '(' + val.substring(0,3) + ') ' + val.substring(3);
+    else if (val.length >= 1) val = '(' + val;
+    this.value = val;
+  });
+
+  // ── ZIP: digits only ──
+  document.getElementById('zip').addEventListener('input', function() {
+    this.value = this.value.replace(/\D/g, '').substring(0, 5);
+  });
+
+  // ── Auto-advance dropdown steps on selection ──
+  document.getElementById('gutter-age').addEventListener('change', function(){
+    if (this.value) { clearError('gutter-age','err-gutter-age'); setTimeout(function(){ nextStep(1); }, 200); }
+  });
+  document.getElementById('sqft').addEventListener('change', function(){
+    if (this.value) { clearError('sqft','err-sqft'); setTimeout(function(){ nextStep(2); }, 200); }
+  });
+
+  function showError(fieldId, errId){ document.getElementById(fieldId).classList.add('error'); document.getElementById(errId).classList.add('visible'); }
+  function clearError(fieldId, errId){ document.getElementById(fieldId).classList.remove('error'); document.getElementById(errId).classList.remove('visible'); }
+
+  function validateStep(step) {
+    let valid = true;
+    if (step === 1) {
+      if (!document.getElementById('gutter-age').value) { showError('gutter-age','err-gutter-age'); valid = false; }
+      else clearError('gutter-age','err-gutter-age');
+    }
+    if (step === 2) {
+      if (!document.getElementById('sqft').value) { showError('sqft','err-sqft'); valid = false; }
+      else clearError('sqft','err-sqft');
+    }
+    if (step === 3) {
+      const firstName = document.getElementById('first-name').value.trim();
+      const lastName  = document.getElementById('last-name').value.trim();
+      const email     = document.getElementById('email').value.trim();
+      const zip       = document.getElementById('zip').value.trim();
+      const address   = document.getElementById('address').value.trim();
+      const phoneClean= document.getElementById('phone').value.replace(/\D/g, '');
+      if (!firstName) { showError('first-name','err-first-name'); valid = false; } else clearError('first-name','err-first-name');
+      if (!lastName)  { showError('last-name','err-last-name'); valid = false; } else clearError('last-name','err-last-name');
+      const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email || !emailRe.test(email)) { showError('email','err-email'); valid = false; } else clearError('email','err-email');
+      if (!/^\d{5}$/.test(zip)) { showError('zip','err-zip'); valid = false; } else clearError('zip','err-zip');
+      if (address.length < 3) { showError('address','err-address'); valid = false; } else clearError('address','err-address');
+      if (phoneClean.length !== 10) { showError('phone','err-phone'); valid = false; } else clearError('phone','err-phone');
+    }
+    return valid;
+  }
+
+  function goToStep(step) {
+    const current = document.getElementById('step-' + currentStep);
+    current.classList.remove('active'); current.style.opacity = '0';
+    setTimeout(() => {
+      current.style.display = 'none';
+      currentStep = step;
+      updateProgress();
+      const next = document.getElementById('step-' + currentStep);
+      next.style.display = 'block'; next.style.opacity = '0'; next.classList.add('active');
+      setTimeout(() => { next.style.opacity = '1'; }, 10);
+    }, 150);
+  }
+  function nextStep(from){ if (!validateStep(from)) return; goToStep(from + 1); }
+  function prevStep(from){ goToStep(from - 1); }
+  function updateProgress() {
+    const pct = (currentStep / TOTAL_STEPS) * 100;
+    document.getElementById('progress-fill').style.width = pct + '%';
+    document.getElementById('step-count').textContent = 'Step ' + currentStep + ' of ' + TOTAL_STEPS;
+  }
+
+  function geocodeZip() {
+    const zip = document.getElementById('zip').value.trim();
+    if (!/^\d{5}$/.test(zip)) return Promise.resolve();
+    const url = 'https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyB3mPbeHtSKvfOl7C_c6fYzbuwYqDFxK7M&components=country:US|postal_code:' + zip;
+    return fetch(url).then(r => r.json()).then(json => {
+      if (json.status !== 'OK' || !json.results || !json.results.length) return;
+      json.results[0].address_components.forEach(function(c){
+        if (c.types[0] === 'administrative_area_level_1') document.getElementById('state').value = c.short_name;
+        if (c.types[0] === 'locality' || c.types[0] === 'neighborhood' || c.types[0] === 'administrative_area_level_3') document.getElementById('city').value = c.long_name;
+      });
+    }).catch(function(){});
+  }
+
+  function submitForm() {
+    if (!validateStep(3)) return;
+    var overlay = document.getElementById('submit-overlay');
+    if (overlay) overlay.classList.add('show');
+    const btn = document.querySelector('#step-3 .btn-orange');
+    if (btn) { btn.disabled = true; btn.textContent = 'Submitting\u2026'; }
+    const haveGeo = document.getElementById('city').value && document.getElementById('state').value;
+    const ensureGeo = haveGeo ? Promise.resolve() : geocodeZip();
+    Promise.resolve(ensureGeo).then(function(){
+      const phoneDigits = document.getElementById('phone').value.replace(/\D/g, '');
+      const tf = document.getElementById('xxTrustedFormCertUrl_0');
+      const payload = {
+        source:            'site',
+        api_key:           '4aG5Y0BIYuWEkfo5Yu4A',
+        fname:             document.getElementById('first-name').value.trim(),
+        lname:             document.getElementById('last-name').value.trim(),
+        email:             document.getElementById('email').value.trim(),
+        phone:             phoneDigits,
+        address:           document.getElementById('address').value.trim(),
+        city:              document.getElementById('city').value,
+        state:             document.getElementById('state').value,
+        zip:               document.getElementById('zip').value.trim(),
+        gutter_age:        document.getElementById('gutter-age').value,
+        square_footage:    document.getElementById('sqft').value,
+        ip:                document.getElementById('ip').value,
+        landingpage:       document.getElementById('lp').value,
+        landingpagedetail: document.getElementById('lpd').value,
+        trustedform:       tf ? tf.value : '',
+        transid:           document.getElementById('transid').value,
+        pubid:             document.getElementById('pubid').value,
+        s1:                document.getElementById('s1').value,
+        s2:                document.getElementById('s2').value,
+        s3:                document.getElementById('s3').value,
+        ua:                document.getElementById('ua').value,
+        cid:               document.getElementById('cid').value
+      };
+      fetch('https://data.thinxmg.com/webhook/f1a9c7d2-5b3e-4a86-9c14-2e7b8d3f6a05', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      }).then(function(){ window.location.href = 'thank-you.html'; })
+        .catch(function(){ window.location.href = 'thank-you.html'; });
+    });
+  }
+</script>
+
+</body>
+</html>
