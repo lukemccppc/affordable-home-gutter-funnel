@@ -158,12 +158,13 @@
     .faq-item[open] .faq-arrow{transform:rotate(180deg)}
     .faq-a{padding:0 20px 18px;font-size:14px;color:var(--body);line-height:1.65}
     .cta-banner{position:relative;overflow:hidden;background:var(--navy);text-align:center;padding:72px 20px}
-    .cta-banner::before{content:'';position:absolute;inset:0;background:url('./img/hero-cta.jpg') center/cover no-repeat;opacity:.22}
+    .cta-banner::before{content:'';position:absolute;inset:0;background:url('./img/hero-photo.png') center/cover no-repeat;opacity:.62}
+    .cta-banner::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,31,60,.45),rgba(10,31,60,.68))}
     .cta-banner .container{position:relative;z-index:1;max-width:560px}
     .cta-banner h2{font-size:clamp(24px,3.5vw,40px);font-weight:800;color:#fff;margin-bottom:24px}
-    .cta-zip-row{display:flex;gap:10px;max-width:420px;margin:0 auto;flex-wrap:wrap}
-    .cta-zip-row .zip-input{flex:1;min-width:160px;height:56px}
-    .cta-zip-row .zip-btn{width:auto;padding:0 28px;height:56px;white-space:nowrap}
+    .cta-zip-row{display:flex;flex-direction:column;gap:10px;max-width:420px;margin:0 auto}
+    .cta-zip-row .zip-input{width:100%;height:60px}
+    .cta-zip-row .zip-btn{width:100%;height:58px}
     footer{background:var(--navy-deep);padding:40px 20px 32px;text-align:center}
     .footer-logo{width:150px;margin:0 auto 14px}
     footer p{color:rgba(255,255,255,.65);font-size:13px;line-height:1.6;max-width:700px;margin:0 auto}
@@ -171,7 +172,7 @@
     .footer-links{margin-top:12px}
     .footer-links a{color:rgba(255,255,255,.7);font-size:13px;text-decoration:underline;margin:0 8px}
     @media (min-width:768px){.offer-pct{font-size:72px}.offer-style{font-size:32px}.hero-content{padding-top:64px}.partners-grid{grid-template-columns:repeat(4,1fr)}.gallery-grid{grid-template-columns:repeat(4,1fr)}}
-    @media (max-width:767px){.event-banner{display:none}.steps-grid{grid-template-columns:1fr;gap:32px}.benefits-grid,.why-features{grid-template-columns:1fr}.partners-grid{grid-template-columns:1fr 1fr}.product-image-wrap{flex:none;width:240px}.problem-grid{grid-template-columns:1fr;gap:28px}.problem-img{order:-1}.cta-zip-row{flex-direction:column;align-items:center}.cta-zip-row .zip-input{width:100%;flex:none}.cta-zip-row .zip-btn{width:100%}}
+    @media (max-width:767px){.event-banner{display:none}.steps-grid{grid-template-columns:1fr;gap:32px}.benefits-grid,.why-features{grid-template-columns:1fr}.partners-grid{grid-template-columns:1fr 1fr}.product-image-wrap{flex:none;width:240px}.problem-grid{grid-template-columns:1fr;gap:28px}.problem-img{order:-1}}
     @media (max-width:540px){.gallery-grid{grid-template-columns:1fr}}
 
     /* ══════════════ DESKTOP-ONLY CUSTOM HERO ══════════════ */
